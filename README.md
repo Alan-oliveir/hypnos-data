@@ -2,9 +2,9 @@
     <img src="logo_hypnos-data.png" alt="Logo PyCats" width= "30%">
 </div>
 
-# Análise da Eficiência do Sono
-
 <div align="center">
+
+<h1> Análise da Eficiência do Sono </h1>
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)

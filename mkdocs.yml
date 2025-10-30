@@ -1,4 +1,7 @@
-site_name: Nome do projeto
+site_name: Análise da Eficiência do Sono - Hypnos Data
+site_description: Projeto de Data Science para análise e predição da eficiência do sono
+site_author: Squad 11 - Alan, Ayrton, Cauan, Hosana
+
 plugins:
   - search
 
@@ -6,26 +9,29 @@ theme:
   name: material
   icon:
     repo: fontawesome/brands/github
-    logo: fontawesome/solid/database
+    logo: fontawesome/solid/bed
   palette:
     - scheme: default
       primary: teal
       accent: teal
       toggle:
         icon: material/lightbulb
-        name: Switch to dark mode
+        name: Alternar para modo escuro
     - scheme: slate
       primary: teal
       accent: teal
       toggle:
         icon: material/lightbulb-outline
-        name: Switch to light mode
+        name: Alternar para modo claro
   features:
     - navigation.tabs
     - navigation.top
-    - navegation.expand
+    - navigation.expand
     - navigation.tabs.sticky
     - navigation.tracking
+    - content.code.copy
+    - content.code.annotate
+
 markdown_extensions:
   - footnotes
   - pymdownx.arithmatex:
@@ -39,6 +45,13 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.keys
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
 
 extra_javascript:
   - assets/js/mathjax.js
@@ -47,11 +60,25 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/sorts/tablesort.number.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/sorts/tablesort.date.min.js
-  - https://unpkg.com/mermaid@8.8.4/dist/mermaid.min.js
 
 extra_css:
   - assets/css/tables.css
 
 # Repository
-repo_name: omadson/project-template
-repo_url: https://github.com/omadson/project-template
+repo_name: hypnos-data
+repo_url: https://github.com/Alan-oliveir/hypnos-data
+
+# Navegação
+nav:
+  - Home: index.md
+  - Dataset: dataset.md
+  - Análise Exploratória: eda.md
+  - Pré-processamento: preprocessing.md
+  - Modelagem: modeling.md
+  - Resultados: results.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Alan-oliveir/hypnos-data
+      name: Repositório no GitHub
